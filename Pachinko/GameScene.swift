@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var wallBottom: SKShapeNode? = nil
+    var score = 0
     
     override func didMoveToView(view: SKView) {
         // pins
@@ -40,14 +41,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.addChild(sprite)
         }
         
+        // bottom
         let path = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil, 0, 0)
         CGPathAddLineToPoint(path, nil, 640, 0)
         wallBottom = SKShapeNode(path: path)
-        wallBottom?.physicsBody = SKPhysicsBody(edgeFromPoint: CGPoint(x: 0, y: 0), toPoint: CGPoint(x: 640,y: 0))
+        wallBottom?.physicsBody = SKPhysicsBody(edgeChainFromPath: path)
         wallBottom?.physicsBody.dynamic = false
         self.addChild(wallBottom)
         
+        // other borders
+        let top = scene.size.height;
+        let right = scene.size.width;
+        let path2 = CGPathCreateMutable()
+        CGPathMoveToPoint(path2, nil, 0, 0)
+        CGPathAddLineToPoint(path2, nil, 0, top)
+        CGPathAddLineToPoint(path2, nil, right - 100, top)
+        CGPathAddLineToPoint(path2, nil, right, top - 100)
+        CGPathAddLineToPoint(path2, nil, right, 0)
+        let borders = SKShapeNode(path: path2)
+        borders.physicsBody = SKPhysicsBody(edgeChainFromPath: path2)
+        borders.physicsBody.dynamic = false
+        self.addChild(borders)
+                
         // setup collision delegate
         self.physicsWorld.contactDelegate = self
     }
@@ -66,14 +82,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 SKAction.removeFromParent()]
             node.runAction(SKAction.sequence(actions))
             
-            let actions2 = [
+            let actionsUp = [
                 SKAction.moveBy(CGVector(dx: 0, dy: 50), duration: 1),
                 SKAction.removeFromParent()
             ]
-            let score = SKLabelNode(text: "+10")
-            score.position = node.position
-            self.addChild(score)
-            score.runAction(SKAction.sequence(actions2))
+            
+            // update score
+            score += 10
+            let label = self.childNodeWithName("score") as SKLabelNode
+            label.text = String(score)
+            
+            let scoreUp = SKLabelNode(text: "+10")
+            scoreUp.position = node.position
+            self.addChild(scoreUp)
+            scoreUp.runAction(SKAction.sequence(actionsUp))
         }
     }
     
@@ -93,6 +115,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.addChild(sprite)
         
+        // give some randomless
         sprite.physicsBody.velocity.dy = 3000 + CGFloat(rand()) * 300 / CGFloat(RAND_MAX);
     }
 }
