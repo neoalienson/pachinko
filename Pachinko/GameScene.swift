@@ -13,6 +13,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var score = 0
     
     override func didMoveToView(view: SKView) {
+        let top = scene.size.height;
+        let right = scene.size.width;
+        
         // pins
         for var x : CGFloat = 75; x < 500; x += 100 {
             for var y : CGFloat = 200; y < 800; y += 100 {
@@ -29,7 +32,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
         // fences
-        for var x : CGFloat = 100; x < 600; x += 100 {
+        for var x : CGFloat = 100; x < right - 100; x += 100 {
             let size = CGSize(width: 5, height: 75)
             let sprite = SKShapeNode(rectOfSize: size)
             sprite.physicsBody = SKPhysicsBody(rectangleOfSize: size)
@@ -44,20 +47,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // bottom
         let path = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil, 0, 0)
-        CGPathAddLineToPoint(path, nil, 640, 0)
+        CGPathAddLineToPoint(path, nil, right, 0)
         wallBottom = SKShapeNode(path: path)
         wallBottom?.physicsBody = SKPhysicsBody(edgeChainFromPath: path)
         wallBottom?.physicsBody.dynamic = false
         self.addChild(wallBottom)
         
         // other borders
-        let top = scene.size.height;
-        let right = scene.size.width;
         let path2 = CGPathCreateMutable()
         CGPathMoveToPoint(path2, nil, 0, 0)
         CGPathAddLineToPoint(path2, nil, 0, top)
-        CGPathAddLineToPoint(path2, nil, right - 100, top)
-        CGPathAddLineToPoint(path2, nil, right, top - 100)
+        CGPathAddLineToPoint(path2, nil, right - 150, top)
+        CGPathAddLineToPoint(path2, nil, right - 50, top - 50)
+        CGPathAddLineToPoint(path2, nil, right, top - 150)
         CGPathAddLineToPoint(path2, nil, right, 0)
         let borders = SKShapeNode(path: path2)
         borders.physicsBody = SKPhysicsBody(edgeChainFromPath: path2)
