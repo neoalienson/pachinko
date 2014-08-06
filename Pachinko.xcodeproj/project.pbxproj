@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B519FD3C1991DFF300AF460D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519FD3B1991DFF300AF460D /* AppDelegate.swift */; };
+		B519FD3E1991DFF300AF460D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B519FD3D1991DFF300AF460D /* GameScene.sks */; };
+		B519FD401991DFF400AF460D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519FD3F1991DFF400AF460D /* GameScene.swift */; };
+		B519FD421991DFF400AF460D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519FD411991DFF400AF460D /* GameViewController.swift */; };
+		B519FD451991DFF400AF460D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B519FD431991DFF400AF460D /* Main.storyboard */; };
+		B519FD471991DFF400AF460D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B519FD461991DFF400AF460D /* Images.xcassets */; };
+		B519FD531991DFF400AF460D /* PachinkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519FD521991DFF400AF460D /* PachinkoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B519FD4D1991DFF400AF460D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B519FD2E1991DFF300AF460D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B519FD351991DFF300AF460D;
+			remoteInfo = Pachinko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B519FD361991DFF300AF460D /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B519FD3A1991DFF300AF460D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B519FD3B1991DFF300AF460D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B519FD3D1991DFF300AF460D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B519FD3F1991DFF400AF460D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B519FD411991DFF400AF460D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B519FD441991DFF400AF460D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B519FD461991DFF400AF460D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B519FD4C1991DFF400AF460D /* PachinkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PachinkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B519FD511991DFF400AF460D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B519FD521991DFF400AF460D /* PachinkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PachinkoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B519FD331991DFF300AF460D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B519FD491991DFF400AF460D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B519FD2D1991DFF300AF460D = {
+			isa = PBXGroup;
+			children = (
+				B519FD381991DFF300AF460D /* Pachinko */,
+				B519FD4F1991DFF400AF460D /* PachinkoTests */,
+				B519FD371991DFF300AF460D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B519FD371991DFF300AF460D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B519FD361991DFF300AF460D /* Pachinko.app */,
+				B519FD4C1991DFF400AF460D /* PachinkoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B519FD381991DFF300AF460D /* Pachinko */ = {
+			isa = PBXGroup;
+			children = (
+				B519FD3B1991DFF300AF460D /* AppDelegate.swift */,
+				B519FD3D1991DFF300AF460D /* GameScene.sks */,
+				B519FD3F1991DFF400AF460D /* GameScene.swift */,
+				B519FD411991DFF400AF460D /* GameViewController.swift */,
+				B519FD431991DFF400AF460D /* Main.storyboard */,
+				B519FD461991DFF400AF460D /* Images.xcassets */,
+				B519FD391991DFF300AF460D /* Supporting Files */,
+			);
+			path = Pachinko;
+			sourceTree = "<group>";
+		};
+		B519FD391991DFF300AF460D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B519FD3A1991DFF300AF460D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B519FD4F1991DFF400AF460D /* PachinkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B519FD521991DFF400AF460D /* PachinkoTests.swift */,
+				B519FD501991DFF400AF460D /* Supporting Files */,
+			);
+			path = PachinkoTests;
+			sourceTree = "<group>";
+		};
+		B519FD501991DFF400AF460D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B519FD511991DFF400AF460D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B519FD351991DFF300AF460D /* Pachinko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B519FD561991DFF400AF460D /* Build configuration list for PBXNativeTarget "Pachinko" */;
+			buildPhases = (
+				B519FD321991DFF300AF460D /* Sources */,
+				B519FD331991DFF300AF460D /* Frameworks */,
+				B519FD341991DFF300AF460D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pachinko;
+			productName = Pachinko;
+			productReference = B519FD361991DFF300AF460D /* Pachinko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B519FD4B1991DFF400AF460D /* PachinkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B519FD591991DFF400AF460D /* Build configuration list for PBXNativeTarget "PachinkoTests" */;
+			buildPhases = (
+				B519FD481991DFF400AF460D /* Sources */,
+				B519FD491991DFF400AF460D /* Frameworks */,
+				B519FD4A1991DFF400AF460D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B519FD4E1991DFF400AF460D /* PBXTargetDependency */,
+			);
+			name = PachinkoTests;
+			productName = PachinkoTests;
+			productReference = B519FD4C1991DFF400AF460D /* PachinkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B519FD2E1991DFF300AF460D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Neo;
+				TargetAttributes = {
+					B519FD351991DFF300AF460D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B519FD4B1991DFF400AF460D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B519FD351991DFF300AF460D;
+					};
+				};
+			};
+			buildConfigurationList = B519FD311991DFF300AF460D /* Build configuration list for PBXProject "Pachinko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B519FD2D1991DFF300AF460D;
+			productRefGroup = B519FD371991DFF300AF460D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B519FD351991DFF300AF460D /* Pachinko */,
+				B519FD4B1991DFF400AF460D /* PachinkoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B519FD341991DFF300AF460D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B519FD471991DFF400AF460D /* Images.xcassets in Resources */,
+				B519FD3E1991DFF300AF460D /* GameScene.sks in Resources */,
+				B519FD451991DFF400AF460D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B519FD4A1991DFF400AF460D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B519FD321991DFF300AF460D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B519FD401991DFF400AF460D /* GameScene.swift in Sources */,
+				B519FD421991DFF400AF460D /* GameViewController.swift in Sources */,
+				B519FD3C1991DFF300AF460D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B519FD481991DFF400AF460D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B519FD531991DFF400AF460D /* PachinkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B519FD4E1991DFF400AF460D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B519FD351991DFF300AF460D /* Pachinko */;
+			targetProxy = B519FD4D1991DFF400AF460D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B519FD431991DFF400AF460D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B519FD441991DFF400AF460D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B519FD541991DFF400AF460D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B519FD551991DFF400AF460D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B519FD571991DFF400AF460D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B519FD581991DFF400AF460D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B519FD5A1991DFF400AF460D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PachinkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pachinko.app/Pachinko";
+			};
+			name = Debug;
+		};
+		B519FD5B1991DFF400AF460D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PachinkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pachinko.app/Pachinko";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B519FD311991DFF300AF460D /* Build configuration list for PBXProject "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B519FD541991DFF400AF460D /* Debug */,
+				B519FD551991DFF400AF460D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B519FD561991DFF400AF460D /* Build configuration list for PBXNativeTarget "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B519FD571991DFF400AF460D /* Debug */,
+				B519FD581991DFF400AF460D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B519FD591991DFF400AF460D /* Build configuration list for PBXNativeTarget "PachinkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B519FD5A1991DFF400AF460D /* Debug */,
+				B519FD5B1991DFF400AF460D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B519FD2E1991DFF300AF460D /* Project object */;
+}
