@@ -13,8 +13,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var score = 0
     
     override func didMoveToView(view: SKView) {
-        let top = scene.size.height;
-        let right = scene.size.width;
+        let top = scene!.size.height;
+        let right = scene!.size.width;
         
         // pins
         let pinRadius : CGFloat = 5
@@ -23,7 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             for var y : CGFloat = 200; y < 800; y += pinSpacing {
                 let sprite = SKShapeNode(circleOfRadius: pinRadius)
                 sprite.physicsBody = SKPhysicsBody(circleOfRadius: pinRadius)
-                sprite.physicsBody.dynamic = false
+                sprite.physicsBody!.dynamic = false
                 // straggered pins
                 sprite.position.x = x + (y % (pinSpacing * 2)) / 2
                 sprite.position.y = y
@@ -38,7 +38,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         for var x : CGFloat = fenceSpacing; x < right - 100; x += fenceSpacing {
             let sprite = SKShapeNode(rectOfSize: fenceSize)
             sprite.physicsBody = SKPhysicsBody(rectangleOfSize: fenceSize)
-            sprite.physicsBody.dynamic = false
+            sprite.physicsBody!.dynamic = false
             sprite.position = CGPoint(x: x, y: fenceSize.height / 2)
             sprite.fillColor = UIColor.whiteColor()
             self.addChild(sprite)
@@ -49,9 +49,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         CGPathMoveToPoint(pathBottom, nil, 0, 0)
         CGPathAddLineToPoint(pathBottom, nil, right, 0)
         borderBottom = SKShapeNode(path: pathBottom)
-        borderBottom?.physicsBody = SKPhysicsBody(edgeChainFromPath: pathBottom)
-        borderBottom?.physicsBody.dynamic = false
-        self.addChild(borderBottom)
+        borderBottom!.physicsBody = SKPhysicsBody(edgeChainFromPath: pathBottom)
+        borderBottom!.physicsBody!.dynamic = false
+        self.addChild(borderBottom!)
         
         // other borders
         let path = CGPathCreateMutable()
@@ -63,7 +63,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         CGPathAddLineToPoint(path, nil, right, 0)
         let borders = SKShapeNode(path: path)
         borders.physicsBody = SKPhysicsBody(edgeChainFromPath: path)
-        borders.physicsBody.dynamic = false
+        borders.physicsBody!.dynamic = false
         self.addChild(borders)
                 
         // setup collision delegate
@@ -80,7 +80,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let node = body.node
             
             // fade out
-            node.runAction(SKAction.sequence([
+            node!.runAction(SKAction.sequence([
                 SKAction.fadeAlphaTo(0, duration: 1),
                 SKAction.removeFromParent()]))
             
@@ -91,7 +91,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             // score float up from the ball
             let scoreUp = SKLabelNode(text: "+10")
-            scoreUp.position = node.position
+            scoreUp.position = node!.position
             self.addChild(scoreUp)
             scoreUp.runAction(SKAction.sequence([
                 SKAction.moveBy(CGVector(dx: 0, dy: 50), duration: 1),
@@ -110,11 +110,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sprite.position = CGPoint(x: 605, y: 40)
         
         sprite.physicsBody = SKPhysicsBody(circleOfRadius: 30)
-        sprite.physicsBody.contactTestBitMask = 1
+        sprite.physicsBody!.contactTestBitMask = 1
         
         self.addChild(sprite)
         
         // give some randomless
-        sprite.physicsBody.velocity.dy = 3000 + CGFloat(rand()) * 300 / CGFloat(RAND_MAX);
+        sprite.physicsBody!.velocity.dy = 3000 + CGFloat(rand()) * 300 / CGFloat(RAND_MAX);
     }
 }
