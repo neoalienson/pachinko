@@ -70,7 +70,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
     }
     
-    func didBeginContact(contact: SKPhysicsContact!) {
+    func didBeginContact(contact: SKPhysicsContact) {
         if contact.bodyA == borderBottom?.physicsBody {
             let body = contact.bodyB
             
@@ -86,7 +86,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             // update score
             score += 10
-            let label = self.childNodeWithName("score") as SKLabelNode
+            let label = self.childNodeWithName("score") as! SKLabelNode
             label.text = String(score)
             
             // score float up from the ball
@@ -100,7 +100,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         // launch a ball
         let sprite = SKSpriteNode(imageNamed:"Spaceship")
         
