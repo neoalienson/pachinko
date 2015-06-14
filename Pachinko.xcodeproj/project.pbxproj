@@ -159,6 +159,7 @@
 		B519FD2E1991DFF300AF460D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Neo;
 				TargetAttributes = {
