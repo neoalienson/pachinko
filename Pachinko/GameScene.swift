@@ -103,7 +103,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // launch a ball
-        let sprite = SKSpriteNode(imageNamed:"Spaceship")
+        let sprite = SKSpriteNode(imageNamed:"coin")
         
         sprite.xScale = 0.15
         sprite.yScale = 0.15

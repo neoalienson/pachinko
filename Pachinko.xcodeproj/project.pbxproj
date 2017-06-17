@@ -165,7 +165,7 @@
 				TargetAttributes = {
 					B519FD351991DFF300AF460D = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = XRPD92G6PC;
+						DevelopmentTeam = 37J588435Y;
 						LastSwiftMigration = 0800;
 					};
 					B519FD4B1991DFF400AF460D = {
@@ -341,6 +341,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 37J588435Y;
 				INFOPLIST_FILE = Pachinko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +357,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 37J588435Y;
 				INFOPLIST_FILE = Pachinko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
