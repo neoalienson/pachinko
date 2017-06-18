@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: Pachinko.xcodeproj
-#xcode_scheme: PachinkoTests
+xcode_scheme: Pachinko
+xcode_sdk: iphonesimulator10.3
