@@ -68,10 +68,8 @@ class PachinkoGame extends forge2d.Forge2DGame with TapCallbacks {
 
   @override
   void onTapDown(TapDownEvent info) {
-    final ball = Ball(forge2d.Vector2(size.x / 2, 50));
+    final ball = Ball(forge2d.Vector2(size.x - 50, size.y - 150));
     world.add(ball);
-    final impulse = forge2d.Vector2(0, (30 + Random().nextDouble() * 3) * -1);
-    ball.body.applyLinearImpulse(impulse);
   }
 
   void increaseScore() {
@@ -120,6 +118,14 @@ class Ball extends forge2d.BodyComponent<PachinkoGame> with forge2d.ContactCallb
       anchor: Anchor.center,
     );
     add(spriteComponent);
+  }
+
+  @override
+  void onMount() {
+    super.onMount();
+    // Apply impulse after the body is created and mounted
+    final impulse = forge2d.Vector2(-200000, (6000000 + Random().nextDouble() * 60000) );
+    body.applyLinearImpulse(impulse);
   }
 
   @override
